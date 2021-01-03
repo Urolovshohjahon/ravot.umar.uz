@@ -34,7 +34,6 @@ header nav ul{
     display: block;
     width: 67px;
     height: 67px;
-
 }
 
 .logo:hover{
@@ -545,3 +544,21 @@ footer p{
     font-size: 13px;
     font-weight: 400;
 }
+
+
+
+@media(max-width: 992px) {
+
+    body header .header_head h1 { 
+       font-size: 75px; 
+    }
+ 
+ }
+ 
+@media(max-width: 768px) {
+
+    body header .header_head h1 { 
+       font-size: 50px; 
+    }
+ 
+ }
