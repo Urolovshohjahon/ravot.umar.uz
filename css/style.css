@@ -1,5 +1,6 @@
 :root{
-    --white_48:rgb(89,147,178,0.48);
+    --white_48:rgba(60, 141, 175, 0.48);
+    --white_48n:rgba(221, 223, 224, 0.2);
     --white_0:rgb(89,147,178,0);
 }
 *{
@@ -19,7 +20,7 @@
 }
 header{
     width: 100%;
-    height: 880px;
+    min-height: 880px;
     background: url('../header.bg_01.jpg');
     margin: auto;
 
@@ -30,12 +31,19 @@ header nav ul{
     text-decoration: none;
 }
 .logo{
+    display: block;
     width: 67px;
     height: 67px;
 
 }
+
 .logo:hover{
     box-shadow: 10px 10px 0px white;
+}
+header nav{
+    display: block;
+    border: 0px solid white;
+    border-bottom: 1px solid #757575;
 }
 header nav ul li a{
     display: inline-block;
@@ -60,29 +68,36 @@ header nav ul li .line{
     opacity: 0;
     background: blue;
 }
-.fa-facebook, .fa-skype, .fa-twitter{
+.fa-facebook, .fa-telegram, .fa-skype, .fa-twitter{
     color:white;
     font-size: 20px;
 }
-.fa-facebook:hover, .fa-skype:hover, .fa-twitter:hover{
-    color:blue;
+.fa-facebook:hover, .fa-telegram:hover, .fa-skype:hover, .fa-twitter:hover{
+    background:white;
+    color: blue;
 }
 .header_head{
-    width: 800px;
-    display: flex;
+    max-width: 800px;
     margin: auto;
-    
+    margin-bottom: 110px;
 }
 header h1{
+    display: block;
+    max-width: 835px;
     color: white;
     font-weight: 700;
     font-size: 152px;
+    margin: auto;
     margin-top:150px;
+    
 }
 header p{
+    display: block;
+    max-width: 835px;
     color: #11749e;
     font-size: 25px;
     font-weight: 500;
+    margin: auto;
 }
 header span{
     color:white;
@@ -105,31 +120,33 @@ main section{
     align-items: center;
     margin-bottom: 130px;
 }
-main section h2{
-    width: 570px;
-    height: 300px;
+
+.dolce{
+    display: flex;
     margin: auto;
+    max-width: 570px;
+    height: 300px;
+  
+    position: relative;
+}
+main section .dolce h2{
+   
+    height: 300px;
     
-    align-items: center;
     text-align: center;
     font-weight: 400;
     font-size: 250px;
     color: var(--white_48);
 }
-.dolce{
-    width: 570px;
-    height: 300px;
-    margin: auto;
-    
-}
-main section h3{
-    width: 570px;
-    height: 300px;
+main section .dolce h3{
+    display: block;
+    max-width: 570px;
+    height: 35px;
     text-align: center;
-    align-items: center;
     color: white;
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 140px;
+ 
 }
 section .fa-pencil-square-o{
     display: flex;
@@ -245,35 +262,50 @@ section .fa-search{
 .section4{
     min-height: 1015px;
 }
-.section4 .text{
-    width: 230px;
-    height: 230px;
+.section4 .blog{
+    display: flex;
+    margin: auto;
+    max-width: 230px;
+    height: 190px;
+    position: relative;
 }
-.section4 .text h1{
-    
-    color: #d7d7d7;
-    font-size: 230px;
+.section4 .blog h1{
+    font-size: 200px;
+    margin: auto;
     text-align: center;
-    margin-top: 100px;
+    color: #222222;
+    font-weight: 700;
+    color: var(--white_48);
 }
-.section4 .text  h1::before{
-    content: "LET'S BLOG";
-    color: black;
-    height: 30px;
-    font-size: 15px;
-    text-align: center;
-}
-.section4 .text p{
-    color:#222222;
+.section4 .blog h2{
+    display: block;
+    max-width: 230px;
+    text-align:center;
+    margin: auto;
+    color: #222222;
+    font-size: 38px;
     font-weight: 400;
+    position: absolute;
+    top: 100px;
+}
+.section4  p{
+    display: block;
+    max-width: 800px;
+    color: #222222;
     font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
 }
 .section4 .fresh{
     width: 270px;
     height: 750px;
-    margin-left: 7.5px;
-    margin-right: 7.5px;
     margin: auto;
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
 }
 .section4 .fresh h2{
     color: #11749e;
@@ -318,6 +350,7 @@ section .fa-search{
     background: url('../bg2_02.jpg');
 }
 .section6 .imgbox{
+    display: flex;
     width: 315px;
     height: 650px;
     border-radius: 45px;
@@ -326,10 +359,13 @@ section .fa-search{
     margin-top:100px;
 }
 .phone{
+    display: flex;
     width: 570px;
     height: 430px;
-    padding:220px 0px 240px 0px;
     margin: auto;
+    margin-top: 200px;
+    /*padding:220px 0px 240px 0px;*/
+    
 }
 .section6 .phone h2{
     font-weight: 500;
@@ -370,33 +406,12 @@ section .fa-search{
 .section7{
     min-height: 945px;
 }
-.section7 .ourteam{
-    width: 780px;
-    height: 300px;
-    text-align: center;
-    margin: auto;
-}
-.section7 .ourteam h1{
-    font-size: 247px;
-    font-weight: 700;
-    color: #222222;
-}
-.section7 .ourteam h1::after{
-    content: "OUR TEAM";
-    color: #222222;
-    font-weight: 500;
-    font-size: 37px;
-}
-.section7 .ourteam p{
-    color: #222222;
-    font-size: 30px;
-    font-weight: 400;
-}
 .section7 .imgbox1, .imgbox2, .imgbox3, .imgbox4{
     display: flex;
     width: 270px;
     height: 415px;
     margin-top: 70px;
+    margin-bottom:80px;
 }
 .section7 .imgbox1{
     background: url('../member-1_05.jpg');
@@ -427,4 +442,106 @@ section .fa-search{
     font-weight: 500;
     font-size: 20px;
     color: #11749e;
+}
+.section7 .blog{
+    display: flex;
+    margin: auto;
+    max-width: 230px;
+    height: 190px;
+    position: relative;
+}
+.section7 .blog h1{
+    font-size: 200px;
+    margin: auto;
+    text-align: center;
+    color: #222222;
+    font-weight: 700;
+    color: var(--white_48);
+}
+.section7 .blog h2{
+    display: block;
+    max-width: 230px;
+    text-align:center;
+    margin: auto;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 400;
+    position: absolute;
+    top: 100px;
+}
+.section7 p{
+    display: block;
+    max-width: 800px;
+    color: #222222;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+}
+.section7 .col-md-12 p{
+    margin-top:60px;
+}
+.section7 .imgbox1 p{
+    margin-top:5px;
+}
+
+.section8{
+    min-height: 850px;
+    background: url('../end_19.jpg');
+}
+main .section8 .dolce h2{
+    height: 300px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 250px;
+    color: var(--white_48n);
+}
+main .section8 .dolce h3{
+    display: block;
+    max-width: 570px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 140px;
+ 
+}
+.section8 input{
+    border: 1px solid white;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    height: 50px;
+    background: rgb(10,10,10,0);
+    color: white;
+}
+.section8 input.message{
+    border: 1px solid white;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    height: 150px;
+    background: rgb(10,10,10,0);
+}
+.section8 .submit{
+    width: 225px;
+    height: 65px;
+    background: #11749e;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+.section9{
+    height: 350px;
+}
+footer{
+    min-height: 115px;
+    background: #222222;
+}
+footer p{
+    color: white;
+    margin-top: 56px;
+    font-size: 13px;
+    font-weight: 400;
 }
