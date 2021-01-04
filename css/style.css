@@ -191,9 +191,11 @@ section .fa-search{
     text-align: center;
 }
 .section2 {
+    max-width: 1600px;
     background: #222222;
     min-height: 450px;
     position: relative;
+    margin: auto;
 }
 .section2 .box1{
     display: flex;
@@ -217,17 +219,25 @@ section .fa-search{
     font-size: 15px;
     font-weight: 400;
 }
+
 .section2 .imgbox{
-    width: 800px;
-    height: 450px;
+    max-width: 800px;
+    max-height: 450px;
     position: absolute;
     top: 0px;
     right: 0px;
 }
+.section2 .imgbox img{
+    display: block;
+    max-width: 800px;
+
+}
 .section3 {
+    max-width: 1600px;
     background: #f3f3f3;
     position: relative;
     min-height: 475px;
+    margin: auto;
 }
 .section3 .box1{
     display: flex;
@@ -252,11 +262,16 @@ section .fa-search{
     font-size: 15px;
     font-weight: 400;
 }
+
 .section3 .imgbox{
-    height: 475px;
+    max-width: 800px;
     position: absolute;
     top: 0px;
     left: 0px;
+}
+.section3 .imgbox img{
+    display: block;
+    max-width: 800px;
 }
 .section4{
     min-height: 1015px;
@@ -298,12 +313,12 @@ section .fa-search{
     margin-top: 35px;
 }
 .section4 .fresh{
+    display: flex;
     width: 270px;
     height: 750px;
     margin: auto;
     margin-top: 100px;
-    margin-left: 15px;
-    margin-right: 15px;
+   
    
 }
 .section4 .fresh h2{
@@ -378,21 +393,21 @@ section .fa-search{
 }
 .progress1{
     margin-top:70px;
-    text-align:center;
+    padding:10px 0px 14px 20px;
     width: 370px;
     height: 40px;
     background: #11749e;
 }
 .progress2{
     margin-top:25px;
-    text-align:center;
+    padding:10px 0px 14px 20px;
     width: 400px;
     height: 40px;
     background: #11749e;
 }
 .progress3{
     margin-top:25px;
-    text-align:center;
+    padding:10px 0px 14px 20px;
     width: 425px;
     height: 40px;
     background: #11749e;
@@ -409,6 +424,7 @@ section .fa-search{
     display: flex;
     width: 270px;
     height: 415px;
+    margin:auto;
     margin-top: 70px;
     margin-bottom:80px;
 }
@@ -552,12 +568,17 @@ footer p{
     body header .header_head h1 { 
        font-size: 75px; 
     }
- 
  }
  
+@media(max-width:1075px){
+    .section4 .fresh p{
+        padding:0px 20px;
+    }
+}
+
 @media(max-width: 768px) {
 
-    body header .header_head h1 { 
+    header .header_head h1 { 
        font-size: 50px; 
     }
  
