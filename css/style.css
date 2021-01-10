@@ -7,6 +7,7 @@ header{
     width: 100%;
     background-image: url('../images/header_01.jpg');
     min-height:750px;
+    position: relative;
     /*background-color: linear-gradient(to right,rgb(26,231,192,0),rgb(23,226,194,0),rgb(18,207,194,0),rgb(27,200,206,0),rgb(10,180,192,0));*/
 }
 .container{
@@ -16,6 +17,16 @@ header{
 }
 /*--------------------------------HEADER_NAV START--------------------------------------------------*/
 
+header:hover .blue{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#19e6c0e3;
+    transition: 3s;
+}
 header .header_nav .fa-graduation-cap{
     font-size: 35px;
     color: white;
@@ -59,14 +70,45 @@ header .header_main h1{
     font-size: 55px;
     font-weight: 800;
     max-width: 500px;
+    transform: translateX(-500px);
+    transition: 0.5s;
+}
+header:hover .header_main h1{
+    
+    transform: translateX(0px);
 }
 header .header_main p{
     color: white;
     font-size: 18px;
     font-weight: 400;
+    transform: translateX(-500px);
+    transition: 0.8s;
 }
-header .header_main .btn{
-
+header:hover .header_main p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    transform: translateX(0px);
+    transition: 1s;
+}
+header .header_main .btn1{
+    transform: translateX(-500px);
+    font-size: 15px;
+    transition:1.4s;
+}
+header:hover .header_main .btn1{
+    
+    transform: translateX(0px);
+    font-size: 15px;
+}
+header .header_main .btn2{
+    transform: translateX(-500px);
+    font-size: 15px;
+    transition:1.2s;
+}
+header:hover .header_main .btn2{
+    
+    transform: translateX(0px);
     font-size: 15px;
 }
 header .header_main .btn1{
@@ -276,6 +318,20 @@ section .btn{
     display: block;
     position: relative;
     margin: auto;
+}
+/*--------------------------section4 start----------------------*/
+.section4{
+    
+    background:url('../images/slider_02.jpg');
+ 
+}
+.section4 .carousel{
+    display: flex;
+    max-width:1600px;
+    min-height: 570px; 
+    margin: auto;
+    align-items: center;
+    
 }
 /*------------------------------section5 start -----------------------------*/
 
