@@ -87,6 +87,8 @@ header .header_main p{
     font-weight: 400;
     position: relative;
     animation: myp 3s normal;
+    text-align:start;
+    max-width: 530px;
 }
 @keyframes myp {
     from {transform: translateX(1000px);}
@@ -169,10 +171,14 @@ section p{
     font-weight: 400;
     margin-bottom: 100px;
 }
-section h2,h3,p{
+section h2,h3,section span{
     max-width: 570px;
     text-align: center;
 }
+section span{
+    margin-bottom:100px;
+}
+
 section .fa-subway,.fa-database,.fa-wrench{
     font-size: 80px;
     color: #b388ff;
@@ -355,7 +361,64 @@ section .btn{
     min-height: 570px; 
     margin: auto;
     align-items: center;
+    justify-content: center;
     
+}
+.section4 .carousel-inner{
+    margin:0px 240px;
+}
+
+main .section4 .carousel h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    max-width: 500px;  
+}
+
+main .section4 .carousel .btn1{
+    width: 150px;
+    height: 45px;
+    background: #061e37;
+    color: white;
+    margin-right: 25px;
+    font-size: 15px;
+}
+main .section4 .carousel p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align:start;
+    max-width: 500px;
+}
+.boy{
+    margin:25px 0px;
+}
+main .section4 .carousel img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius:50%;
+}
+.section4 .vlog{
+    width: 450px;
+    height: 160px;
+    background: white;
+    border-radius:3px;
+    padding:18px 35px 13px 15px;
+    overflow: auto;
+    
+    
+}
+.section4 .vlog h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+.vlogp{
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #78909c;
 }
 /*------------------------------section5 start -----------------------------*/
 
