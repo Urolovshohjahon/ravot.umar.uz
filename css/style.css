@@ -365,7 +365,10 @@ section .btn{
     
 }
 .section4 .carousel-inner{
-    padding:0px 290px;
+    padding:0px 240px;
+}
+.section4 .carousel a{
+    width: 10%;
 }
 
 main .section4 .carousel h1{
@@ -400,8 +403,8 @@ main .section4 .carousel img{
     border-radius:50%;
 }
 .section4 .vlog{
-    width: 450px;
-    height: 160px;
+    max-width: 450px;
+    max-height: 160px;
     background: white;
     border-radius:3px;
     padding:18px 35px 13px 15px;
@@ -414,12 +417,7 @@ main .section4 .carousel img{
     font-weight: 700;
     color: black;
 }
-.vlogp{
-    display: block;
-    font-size: 15px;
-    font-weight: 400;
-    color: #78909c;
-}
+
 /*------------------------------section5 start -----------------------------*/
 
 .section5 h2{
@@ -644,4 +642,47 @@ footer ul li a:hover{
         width: 86px;
         height: 86px;
     } 
+
+
+    .section4 .carousel-inner{
+        padding:0px 120px;
+    }
+    
+    main .section4 .carousel h1{
+        color: white;
+        font-size: 22px;
+        font-weight: 800;
+        max-width: 500px;  
+    }
+    
+    main .section4 .carousel .btn1{
+        width: 75px;
+        height: 22px;
+        background: #061e37;
+        color: white;
+        margin-right: 12px;
+        font-size: 8px;
+    }
+    main .section4 .carousel p{
+        color: white;
+        font-size: 10px;
+        font-weight: 400;
+        text-align:start;
+        max-width: 500px;
+    }
+    .section4 .vlog{
+        
+        background: white;
+        border-radius:3px;
+        padding:18px 35px 13px 15px;        
+    }
+    .section4 .vlog h5{
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+    .section4 .vlog span{
+        font-size: 9px;
+    }
+    
 }
